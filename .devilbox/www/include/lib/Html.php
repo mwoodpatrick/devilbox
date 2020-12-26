@@ -24,6 +24,19 @@ class Html
 			)
 		),
 		array(
+			'name' => 'Configs',
+			'menu' => array(
+				array(
+					'name' => 'PHP',
+					'path' => '/config_php.php'
+				),
+				array(
+					'name' => 'Httpd',
+					'path' => '/config_httpd.php'
+				),
+			),
+		),
+		array(
 			'name' => 'Databases',
 			'menu' => array(
 				array(
@@ -78,6 +91,10 @@ class Html
 				array(
 					'name' => 'Memcached Info',
 					'path' => '/info_memcd.php'
+				),
+				array(
+					'name' => 'XDebug Control Panel',
+					'path' => '/xdebug.php'
 				)
 			)
 		),
