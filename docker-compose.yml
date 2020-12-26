@@ -95,6 +95,8 @@ services:
   # PHP
   # ------------------------------------------------------------
   php:
+    # image: mwoodpatrick/php-fpm-7.4
+    # image: devilbox/deno-php
     image: devilbox/php-fpm:${PHP_SERVER}-work-0.116
     hostname: php
 
