@@ -232,3 +232,4 @@ $RECYCLE.BIN/
 
 ###### VS Code ######
 /.vscode
+/.devcontainer
