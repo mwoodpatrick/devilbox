@@ -17,6 +17,12 @@
 /.env
 /backups/*
 
+# ignore vscode files
+/.devcontainer
+
+# ignore startup files
+autostart/ecosystem.config.js
+
 # Ignore Data dirs
 /data/www/*
 
@@ -232,4 +238,3 @@ $RECYCLE.BIN/
 
 ###### VS Code ######
 /.vscode
-/.devcontainer

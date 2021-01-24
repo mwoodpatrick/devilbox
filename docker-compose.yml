@@ -96,7 +96,8 @@ services:
   # ------------------------------------------------------------
   php:
     # image: devilbox/php-fpm:${PHP_SERVER}-work-0.122
-    image: mwoodpatrick/devilbox-dev
+    # image: mwoodpatrick/devilbox-dev
+    image: mwoodpatrick/devilbox-dev-xvnc
     hostname: php
 
     ##
@@ -107,6 +108,14 @@ services:
     ##
     env_file:
       - ./.env
+
+
+    ports:
+       # VNC GUI client port
+              - 5901:5901
+              - 6001:6001
+       # Web GUI client port
+       #      - 6080:80
 
     environment:
       ##
