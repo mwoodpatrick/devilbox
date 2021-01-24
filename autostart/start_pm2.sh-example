@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+pm2 start /startup.2.d/ecosystem.config.js
