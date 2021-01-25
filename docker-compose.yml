@@ -78,6 +78,16 @@ services:
       ##
       - DOCKER_LOGS=${BIND_LOG_DNS_QUERIES}
 
+      ##
+      ## Deno
+      ##
+      - DENO_INSTALL_ROOT=/usr/local
+
+      ##
+      ##  Display
+      ##
+      - DISPLAY=1:0
+
     dns:
       - 127.0.0.1
 
@@ -96,8 +106,7 @@ services:
   # ------------------------------------------------------------
   php:
     # image: devilbox/php-fpm:${PHP_SERVER}-work-0.122
-    # image: mwoodpatrick/devilbox-dev
-    image: mwoodpatrick/devilbox-dev-xvnc
+    image: mwoodpatrick/php-fpm-dev
     hostname: php
 
     ##
