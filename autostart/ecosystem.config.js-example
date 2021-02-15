@@ -1,0 +1,33 @@
+module.exports = {
+  apps : [{
+    name: 'deno',
+    cwd:'/shared/httpd/deno/app',
+    script: 'main.ts',
+    watch: '.',
+    watch       : true,
+    interpreter: 'deno',
+    interpreterArgs: 'run --allow-env --allow-net',
+    time: true,
+
+    env: {
+      DENO_PORT: 5000,
+      DENO_DIR: 'DENO_DIR'
+    },
+  },
+  {
+    name: 'node',
+    cwd: '/shared/httpd/node/src',
+    script: 'index.js'
+  },
+  {
+    name: 'node1',
+    cwd: '/shared/httpd/node1/src',
+    script: 'index.js'
+  },
+  {
+    name: 'node1',
+    cwd: '/shared/httpd/another-node-project/javascript/',
+    script: 'run.js'
+  }
+],
+};
