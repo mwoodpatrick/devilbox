@@ -25,9 +25,11 @@ module.exports = {
     script: 'index.js'
   },
   {
-    name: 'node1',
-    cwd: '/shared/httpd/another-node-project/javascript/',
-    script: 'run.js'
-  }
+    name: 'vnc',
+    interpreter: 'bash',
+    cwd: '/shared/httpd',
+    script: 'vncserver'
+    interpreterArgs: '-geometry 1600x900 -depth 24',
+  },
 ],
 };
